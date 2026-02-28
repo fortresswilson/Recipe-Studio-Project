@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Cuisine - Recipe Studio</title>
+    <link rel="stylesheet" href="styleItalian.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Recipe Studio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="west-african.html">West African</a>
+            <a href="japanese.html">Japanese</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="american.html">American</a>
+            <a href="italian.html">Italian</a>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="filter-vegan" class="sr-only" aria-label="Toggle Vegan Recommendations">
+    <input type="checkbox" id="filter-gf" class="sr-only" aria-label="Toggle Gluten-Free Recommendations">
+
+    <main>
+        <div class="recipe-header">
+            <h1>Classic Spaghetti Bolognese</h1>
+            <p>A hearty, traditional Italian pasta dish featuring a rich, slow-simmered meat sauce.</p>
+        </div>
+
+        <div class="recipe-grid">
+            <div class="recipe-content card">
+                <h2>Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li><input type="checkbox" aria-label="Check off 1 lb Ground Beef"> 1 lb Ground Beef</li>
+                    <li><input type="checkbox" aria-label="Check off 1 lb Spaghetti"> 1 lb Spaghetti</li>
+                    <li><input type="checkbox" aria-label="Check off 1 cup Crushed Tomatoes"> 1 cup Crushed Tomatoes</li>
+                    <li><input type="checkbox" aria-label="Check off 1 diced onion"> 1 Medium Onion, diced</li>
+                    <li><input type="checkbox" aria-label="Check off 2 cloves garlic"> 2 Cloves Garlic, minced</li>
+                    <li><input type="checkbox" aria-label="Check off 2 tbsp Olive Oil"> 2 tbsp Olive Oil</li>
+                </ul>
+
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Heat olive oil in a large pot over medium heat. Add diced onions and minced garlic, sautéing until translucent.</li>
+                    <li>Add the ground beef, breaking it apart with a spoon, and cook until fully browned.</li>
+                    <li>Pour in the crushed tomatoes, reduce heat to low, and let the sauce simmer for 30-40 minutes.</li>
+                    <li>In a separate large pot, boil salted water and cook the spaghetti until al dente.</li>
+                    <li>Drain the pasta, plate it, and generously spoon the bolognese sauce over the top. Serve immediately.</li>
+                </ol>
+            </div>
+
+            <div class="customization-section">
+                <h2>Customize Recipe</h2>
+                
+                <div class="filter-chips">
+                    <label for="filter-vegan" class="chip chip-vegan" tabindex="0">Vegan</label>
+                    <label for="filter-gf" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                </div>
+
+                <h3>Suggested Next Steps</h3>
+                <div class="suggestions-container">
+                    
+                    <div class="suggestion-card vegan-card">
+                        <div class="card-header">
+                            <h4>Swap Beef &rarr; Lentils</h4>
+                            <span class="badge">Confidence: High</span>
+                        </div>
+                        <p>Brown lentils are a fantastic plant-based substitute that mimics the texture of ground meat perfectly while soaking up the tomato sauce.</p>
+                        <p class="hint"><strong>Why?</strong> They are rich in protein, hold their shape well, and reduce the overall cooking time.</p>
+                    </div>
+
+                    <div class="suggestion-card gf-card">
+                        <div class="card-header">
+                            <h4>Swap Spaghetti &rarr; Brown Rice Pasta</h4>
+                            <span class="badge">Confidence: High</span>
+                        </div>
+                        <p>Use your favorite brand of brown rice or corn-based spaghetti to make this dish entirely gluten-free.</p>
+                        <p class="hint"><strong>Why?</strong> Brown rice pasta offers a very similar al dente bite compared to traditional wheat pasta.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
