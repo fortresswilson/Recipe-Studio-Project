@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Cuisine - Recipe Studio</title>
+    <link rel="stylesheet" href="styleitalian.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Recipe Studio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="west-african.html">West African</a>
+            <a href="japanese.html">Japanese</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="indian.html">Indian</a>
+            <a href="italian.html">Italian</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="recipe-subnav">
+            <a href="#tacos">1. Tacos al Pastor</a>
+            <a href="#guacamole">2. Authentic Guacamole</a>
+            <a href="#enchiladas">3. Chicken Enchiladas</a>
+            <a href="#rellenos">4. Chiles Rellenos</a>
+            <a href="#fajitas">5. Sizzling Fajitas</a>
+        </div>
+
+        <section id="tacos" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Tacos al Pastor</h1>
+                <p>Thinly sliced, marinated pork roasted with pineapple and served on warm tortillas.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-1" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-1" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 lbs Pork Shoulder, thinly sliced</li>
+                        <li><input type="checkbox"> 3 Guajillo Chiles & 2 Ancho Chiles, rehydrated</li>
+                        <li><input type="checkbox"> 1/2 cup Pineapple Juice & 1 cup Pineapple Chunks</li>
+                        <li><input type="checkbox"> 2 tbsp Achiote Paste</li>
+                        <li><input type="checkbox"> 10 Small Corn or Flour Tortillas</li>
+                        <li><input type="checkbox"> Chopped Onion & Cilantro for garnish</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Blend the rehydrated chiles, pineapple juice, achiote paste, and a pinch of cumin to create the marinade.</li>
+                        <li>Coat the sliced pork in the marinade and refrigerate for at least 4 hours.</li>
+                        <li>In a very hot skillet (or on a grill), cook the marinated pork and pineapple chunks until the edges are slightly charred.</li>
+                        <li>Chop the cooked pork into bite-sized pieces.</li>
+                        <li>Warm the tortillas and assemble the tacos, garnishing with fresh onion, cilantro, and a squeeze of lime.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-1" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-1" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Pork &rarr; Oyster Mushrooms or Jackfruit</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Shredded king oyster mushrooms or canned young jackfruit soak up the achiote marinade brilliantly.</p>
+                            <p class="hint"><strong>Why?</strong> Both options replicate the shredded, meaty texture of slow-cooked pork while getting perfectly crispy edges in a hot pan.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Use 100% Corn Tortillas</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Ensure you are using pure corn tortillas rather than flour tortillas or "mix" tortillas.</p>
+                            <p class="hint"><strong>Why?</strong> Authentic Mexican street tacos exclusively use corn tortillas, which are naturally gluten-free and offer a superior flavor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guacamole" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Authentic Guacamole</h1>
+                <p>A fresh, chunky dip made from ripe avocados, lime juice, and aromatics.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-2" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-2" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 3 Ripe Haas Avocados</li>
+                        <li><input type="checkbox"> 1/2 small White Onion, finely diced</li>
+                        <li><input type="checkbox"> 1 Jalapeño, seeded and minced</li>
+                        <li><input type="checkbox"> 1/4 cup Fresh Cilantro, chopped</li>
+                        <li><input type="checkbox"> 1-2 Limes, juiced</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Halve the avocados, remove the pits, and scoop the flesh into a large bowl.</li>
+                        <li>Using a fork or potato masher, gently mash the avocados. Leave it slightly chunky for better texture.</li>
+                        <li>Fold in the diced onion, minced jalapeño, and chopped cilantro.</li>
+                        <li>Pour the fresh lime juice over the mixture and season generously with salt.</li>
+                        <li>Stir to combine. Taste and adjust salt or lime juice as needed. Serve immediately with tortilla chips.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-2" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-2" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Naturally Vegan</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>This recipe is entirely plant-based. No modifications are needed!</p>
+                            <p class="hint"><strong>Why?</strong> Authentic guacamole relies strictly on fresh produce. Keep dairy out of it!</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check Your Tortilla Chips</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>The guacamole is gluten-free, but be careful with the chips you dip into it.</p>
+                            <p class="hint"><strong>Why?</strong> While corn chips are naturally gluten-free, restaurant or store-bought chips are often fried in the same oil as wheat products, leading to cross-contamination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="enchiladas" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Red Chile Chicken Enchiladas</h1>
+                <p>Corn tortillas rolled around shredded chicken, baked in a rich red chile sauce and topped with melted cheese.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-3" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-3" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 cups Cooked Chicken, shredded</li>
+                        <li><input type="checkbox"> 12 Corn Tortillas</li>
+                        <li><input type="checkbox"> 2 cups Red Enchilada Sauce</li>
+                        <li><input type="checkbox"> 2 cups Monterey Jack Cheese, shredded</li>
+                        <li><input type="checkbox"> 1/4 cup Neutral Oil (for frying)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat the oven to 375°F. Spread a thin layer of enchilada sauce in the bottom of a 9x13 baking dish.</li>
+                        <li>Briefly fry each corn tortilla in hot oil for about 5 seconds per side to soften them and prevent cracking. Drain on paper towels.</li>
+                        <li>Dip a softened tortilla into the enchilada sauce, fill with shredded chicken and a pinch of cheese, roll tightly, and place seam-side down in the baking dish.</li>
+                        <li>Pour the remaining enchilada sauce evenly over the rolled tortillas and top with the rest of the shredded cheese.</li>
+                        <li>Bake for 20 minutes until the cheese is bubbling and slightly golden.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-3" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-3" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Chicken & Cheese &rarr; Black Beans, Corn, & Vegan Shreds</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Fill the tortillas with a mixture of seasoned black beans and roasted corn, and top with plant-based Monterey Jack shreds.</p>
+                            <p class="hint"><strong>Why?</strong> Black beans provide the necessary protein and a hearty texture, making them a staple filling in vegetarian Mexican cuisine.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check the Enchilada Sauce</h4>
+                                <span class="badge">Confidence: Med</span>
+                            </div>
+                            <p>Verify that your canned enchilada sauce is certified gluten-free, or make it from scratch.</p>
+                            <p class="hint"><strong>Why?</strong> Many commercial brands of red enchilada sauce use wheat flour as a cheap thickening agent for their chili purees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rellenos" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Classic Chiles Rellenos</h1>
+                <p>Roasted poblano peppers stuffed with melting cheese, coated in a fluffy egg batter, and fried.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-4" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-4" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 4 Large Poblano Peppers</li>
+                        <li><input type="checkbox"> 1.5 cups Oaxaca Cheese, cut into sticks</li>
+                        <li><input type="checkbox"> 3 Large Eggs, separated</li>
+                        <li><input type="checkbox"> 1/4 cup All-Purpose Flour (for dusting)</li>
+                        <li><input type="checkbox"> Oil for frying</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Roast the poblanos over an open flame or under a broiler until the skin is blistered and black. Place in a covered bowl to steam for 10 minutes, then peel off the skin.</li>
+                        <li>Carefully slit the side of each pepper, remove the seeds, and stuff with the sticks of Oaxaca cheese. Dust the stuffed peppers lightly with flour.</li>
+                        <li>Beat the egg whites until stiff peaks form. Gently fold in the egg yolks to create a fluffy batter.</li>
+                        <li>Heat 1 inch of oil in a skillet. Dip each stuffed pepper into the fluffy egg batter, ensuring it's fully coated.</li>
+                        <li>Fry the peppers, turning once, until golden brown on all sides. Serve immediately, often topped with a light tomato salsa.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-4" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-4" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Bake with a Quinoa Stuffing</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Skip the egg batter entirely. Stuff the roasted peppers with a spiced quinoa, corn, and black bean mixture, then bake them.</p>
+                            <p class="hint"><strong>Why?</strong> The traditional fluffy egg batter is incredibly difficult to replicate without eggs. A baked, hearty stuffed pepper is a cleaner, easier, and delicious plant-based alternative.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Flour Dusting &rarr; Cornstarch</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Dust the stuffed poblano peppers with cornstarch or a gluten-free all-purpose flour blend instead of wheat flour.</p>
+                            <p class="hint"><strong>Why?</strong> The dusting step is crucial because it gives the fluffy egg batter a dry surface to cling to during frying. Cornstarch works perfectly for this.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fajitas" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Sizzling Beef Fajitas</h1>
+                <p>Marinated skirt steak pan-seared with bell peppers and onions.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-5" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-5" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1.5 lbs Skirt Steak</li>
+                        <li><input type="checkbox"> 1 Red and 1 Green Bell Pepper, sliced</li>
+                        <li><input type="checkbox"> 1 Large White Onion, sliced</li>
+                        <li><input type="checkbox"> 1/4 cup Lime Juice & 2 tbsp Soy Sauce</li>
+                        <li><input type="checkbox"> 1 tbsp Cumin & 1 tbsp Chili Powder</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Whisk the lime juice, soy sauce, cumin, chili powder, and a splash of oil. Marinate the skirt steak in this mixture for 2-4 hours.</li>
+                        <li>Heat a large cast-iron skillet until smoking hot. Remove the steak from the marinade and sear for 3-4 minutes per side. Remove and let rest.</li>
+                        <li>In the same hot skillet, add the sliced bell peppers and onions. Cook until charred on the edges but still crisp-tender.</li>
+                        <li>Slice the rested steak thinly against the grain.</li>
+                        <li>Return the sliced steak to the skillet with the vegetables, toss to combine, and serve sizzling with warm tortillas.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-5" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-5" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Beef &rarr; Portobello Mushrooms</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Slice large portobello mushroom caps into thick strips and marinate them just like you would the steak.</p>
+                            <p class="hint"><strong>Why?</strong> Portobello mushrooms have a rich, earthy, meaty texture and act like sponges, soaking up the savory lime and soy marinade rapidly.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Soy Sauce &rarr; Tamari</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use Tamari or coconut aminos in your marinade instead of traditional soy sauce.</p>
+                            <p class="hint"><strong>Why?</strong> Standard soy sauce is brewed with roasted wheat. Tamari offers the exact same umami flavor profile but is traditionally brewed without gluten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -9,6 +9,11 @@
     --focus-outline: #005fcc;
 }
 
+/* Enable smooth scrolling for the recipe menu */
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
     font-family: system-ui, -apple-system, sans-serif;
     margin: 0;
@@ -18,7 +23,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation based on chat agreement */
+/* Navigation */
 nav {
     background-color: var(--nav-bg);
     color: var(--nav-text);
@@ -33,24 +38,60 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth color shift on hover */
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #ccc;
 }
 
-/* Layout Structure */
+/* Main Content & Recipe Sub-navigation */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
+.recipe-subnav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: #e0e0e0;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.recipe-subnav a {
+    text-decoration: none;
+    color: var(--primary-accent);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-accent);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.recipe-subnav a:hover {
+    background: var(--primary-accent);
+    color: white;
+}
+
+/* Recipe Blocks Structure */
+.recipe-block {
+    margin-bottom: 5rem;
+    scroll-margin-top: 2rem; /* Creates breathing room when scrolling */
+    padding-bottom: 3rem;
+    border-bottom: 2px dashed #ccc;
+}
+
+.recipe-block:last-child {
+    border-bottom: none;
+}
+
 .recipe-header {
-    border-bottom: 2px solid #ccc;
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
 }
 
 .recipe-grid {
@@ -65,7 +106,7 @@ main {
     }
 }
 
-/* Gray Cards with Box Shadows (Chat Agreement) */
+/* Gray Cards with Box Shadows */
 .card {
     background-color: var(--card-bg);
     padding: 1.5rem;
@@ -74,12 +115,10 @@ main {
     transition: transform 0.3s ease;
 }
 
-/* Transform on hover */
 .card:hover, .suggestion-card:hover {
     transform: scale(1.02);
 }
 
-/* Ingredients List */
 .ingredients-list {
     list-style: none;
     padding: 0;
@@ -119,20 +158,18 @@ main {
     cursor: pointer;
     font-weight: bold;
     color: var(--primary-accent);
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color shift */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .chip:hover {
     background-color: #e8f5e9;
 }
 
-/* Visible focus outlines */
 .chip:focus-visible, input[type="checkbox"]:focus-visible + label, a:focus-visible {
     outline: 3px solid var(--focus-outline);
     outline-offset: 2px;
 }
 
-/* Suggestion Cards Base */
 .suggestion-card {
     background-color: #fff;
     border-left: 5px solid var(--primary-accent);
@@ -140,7 +177,7 @@ main {
     margin-bottom: 1rem;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    display: none; /* Hidden by default */
+    display: none;
     opacity: 0;
     transition: transform 0.3s ease;
 }
@@ -165,32 +202,25 @@ main {
     font-weight: bold;
 }
 
-.hint {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 0.5rem;
-}
-
-/* State-based UI toggles - CORRECTED PATHS */
-/* Link hidden checkboxes to chips and cards by passing through the 'main' tag */
-#filter-vegan:checked ~ main .recipe-grid .customization-section .filter-chips .chip-vegan {
+/* Scoped State-based UI toggles using Classes instead of IDs */
+.filter-vegan:checked ~ .recipe-grid .customization-section .filter-chips .chip-vegan {
     background-color: var(--primary-accent);
     color: white;
 }
 
-#filter-gf:checked ~ main .recipe-grid .customization-section .filter-chips .chip-gf {
+.filter-gf:checked ~ .recipe-grid .customization-section .filter-chips .chip-gf {
     background-color: var(--primary-accent);
     color: white;
 }
 
-#filter-vegan:checked ~ main .recipe-grid .customization-section .suggestions-container .vegan-card {
+.filter-vegan:checked ~ .recipe-grid .customization-section .suggestions-container .vegan-card {
     display: block;
-    animation: fadeInOpacity 0.5s forwards; /* Opacity fade-in */
+    animation: fadeInOpacity 0.5s forwards;
 }
 
-#filter-gf:checked ~ main .recipe-grid .customization-section .suggestions-container .gf-card {
+.filter-gf:checked ~ .recipe-grid .customization-section .suggestions-container .gf-card {
     display: block;
-    animation: fadeInOpacity 0.5s forwards; /* Opacity fade-in */
+    animation: fadeInOpacity 0.5s forwards;
 }
 
 @keyframes fadeInOpacity {
@@ -198,7 +228,6 @@ main {
     to { opacity: 1; }
 }
 
-/* Prefers Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;

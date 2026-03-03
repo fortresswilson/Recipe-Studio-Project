@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cuisine - Recipe Studio</title>
+    <link rel="stylesheet" href="styleitalian.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Recipe Studio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="west-african.html">West African</a>
+            <a href="japanese.html">Japanese</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="indian.html">Indian</a>
+            <a href="italian.html">Italian</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="recipe-subnav">
+            <a href="#tikka">1. Chicken Tikka Masala</a>
+            <a href="#palak">2. Palak Paneer</a>
+            <a href="#chana">3. Chana Masala</a>
+            <a href="#biryani">4. Vegetable Biryani</a>
+            <a href="#butter">5. Butter Chicken</a>
+        </div>
+
+        <section id="tikka" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Chicken Tikka Masala</h1>
+                <p>Roasted marinated chicken chunks in a spiced, creamy curry sauce.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-1" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-1" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1.5 lbs Boneless Chicken Thighs</li>
+                        <li><input type="checkbox"> 1 cup Plain Yogurt</li>
+                        <li><input type="checkbox"> 2 tbsp Garam Masala</li>
+                        <li><input type="checkbox"> 1 can (14oz) Tomato Puree</li>
+                        <li><input type="checkbox"> 1/2 cup Heavy Cream</li>
+                        <li><input type="checkbox"> 3 Cloves Garlic & 1 tbsp Ginger, minced</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Mix yogurt, half the ginger/garlic, and 1 tbsp garam masala. Marinate chicken for at least 1 hour.</li>
+                        <li>Broil or grill the marinated chicken until slightly charred and cooked through. Set aside.</li>
+                        <li>In a large pot, sauté the remaining ginger and garlic. Add tomato puree and remaining spices, simmering for 15 minutes.</li>
+                        <li>Stir in the heavy cream and let the sauce thicken slightly over low heat.</li>
+                        <li>Add the cooked chicken pieces into the sauce, simmer for 5 more minutes, and serve hot with rice or naan.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-1" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-1" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Chicken & Cream &rarr; Chickpeas & Coconut Milk</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Replace the chicken with 2 cans of drained chickpeas, and swap the yogurt/cream for full-fat coconut milk.</p>
+                            <p class="hint"><strong>Why?</strong> Chickpeas are a staple in Indian cooking and hold up beautifully in heavy curries, while coconut milk provides the exact fat content needed to cut the acidity of the tomatoes.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check Spices & Serve with Rice</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>This dish is naturally gluten-free! Just ensure you serve it with Basmati rice instead of Naan bread.</p>
+                            <p class="hint"><strong>Why?</strong> Traditional Indian curries use spices, tomatoes, and dairy/coconut to thicken the sauce rather than flour-based roux.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="palak" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Palak Paneer</h1>
+                <p>A classic North Indian dish featuring fresh spinach puree and cubes of mild paneer cheese.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-2" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-2" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1 lb Fresh Spinach</li>
+                        <li><input type="checkbox"> 10 oz Paneer (Indian Cottage Cheese), cubed</li>
+                        <li><input type="checkbox"> 1 Medium Onion, finely chopped</li>
+                        <li><input type="checkbox"> 1 tsp Cumin Seeds</li>
+                        <li><input type="checkbox"> 1/4 cup Heavy Cream</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Blanch the spinach in boiling water for 2 minutes, immediately transfer to an ice bath, and then blend into a smooth puree.</li>
+                        <li>Lightly pan-fry the paneer cubes in oil until the edges are golden brown. Remove and set aside.</li>
+                        <li>In the same pan, temper the cumin seeds until fragrant, then sauté the onions until golden.</li>
+                        <li>Add the spinach puree and simmer for 5-7 minutes.</li>
+                        <li>Stir in the cream, gently fold in the paneer cubes, and simmer for 2 more minutes before serving.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-2" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-2" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Paneer &rarr; Extra Firm Tofu</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Press extra-firm tofu to remove moisture, cube it, and pan-fry it exactly as you would the paneer.</p>
+                            <p class="hint"><strong>Why?</strong> Tofu has an incredibly similar texture and mild flavor profile to paneer, making it a seamless visual and textural substitute.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>No swaps needed. Palak Paneer does not contain any gluten ingredients.</p>
+                            <p class="hint"><strong>Why?</strong> The thickness of the dish comes entirely from the pureed spinach and the fat content of the dairy/cream.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chana" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Chana Masala</h1>
+                <p>A hearty, tangy, and slightly spicy chickpea curry bursting with flavor.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-3" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-3" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 cans (15oz) Chickpeas, rinsed</li>
+                        <li><input type="checkbox"> 1 large Onion, finely chopped</li>
+                        <li><input type="checkbox"> 2 Tomatoes, diced</li>
+                        <li><input type="checkbox"> 1 tbsp Chana Masala spice blend</li>
+                        <li><input type="checkbox"> Fresh Cilantro for garnish</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Heat oil in a heavy-bottomed pot and sauté the onions until deeply caramelized and brown.</li>
+                        <li>Add the tomatoes and cook until they break down entirely into a thick paste.</li>
+                        <li>Stir in the Chana Masala spice blend and cook for 1 minute to bloom the spices.</li>
+                        <li>Add the chickpeas and 1 cup of water. Bring to a boil, then reduce heat and simmer for 20 minutes.</li>
+                        <li>Lightly mash a few chickpeas with the back of your spoon to naturally thicken the gravy. Garnish with cilantro.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-3" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-3" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Use Cooking Oil instead of Ghee</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>This recipe is already 100% plant-based, just make sure to use a neutral vegetable oil for sautéing.</p>
+                            <p class="hint"><strong>Why?</strong> Some traditional Indian restaurants use Ghee (clarified butter) to cook the onions, but oil is a perfectly standard alternative.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check Pre-made Spice Blends</h4>
+                                <span class="badge">Confidence: Med</span>
+                            </div>
+                            <p>While the ingredients are gluten-free, always check the label of store-bought Chana Masala spice blends.</p>
+                            <p class="hint"><strong>Why?</strong> Some commercial spice mixes use wheat flour as an anti-caking agent to keep the spices from clumping in the box.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="biryani" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Vegetable Biryani</h1>
+                <p>An aromatic, deeply flavorful mixed rice dish layered with spiced vegetables.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-4" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-4" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 cups Basmati Rice, washed and soaked</li>
+                        <li><input type="checkbox"> 2 cups Mixed Veggies (Carrots, Peas, Cauliflower)</li>
+                        <li><input type="checkbox"> 1/2 cup Plain Yogurt</li>
+                        <li><input type="checkbox"> 2 tbsp Ghee (Clarified Butter)</li>
+                        <li><input type="checkbox"> Biryani whole spices (Cinnamon, Cardamom, Cloves)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Parboil the soaked Basmati rice with whole spices until 70% cooked. Drain and set aside.</li>
+                        <li>Marinate the mixed vegetables in yogurt and powdered spices (turmeric, chili powder, biryani masala) for 30 minutes.</li>
+                        <li>In a heavy-bottomed pot, cook the marinated vegetables in ghee until tender.</li>
+                        <li>Layer the partially cooked rice evenly over the vegetables. Add a splash of saffron milk on top.</li>
+                        <li>Cover the pot tightly and cook on the lowest possible heat for 15-20 minutes to steam and finish cooking the rice (Dum method).</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-4" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-4" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Ghee/Yogurt &rarr; Coconut Oil & Dairy-free Yogurt</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use coconut oil instead of ghee, and marinate the vegetables in a plain, unsweetened almond or soy yogurt.</p>
+                            <p class="hint"><strong>Why?</strong> The yogurt is needed to tenderize the vegetables and create a thick base gravy, which plant-based yogurts achieve perfectly.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Rice and vegetables are the stars here, making this dish entirely free of gluten.</p>
+                            <p class="hint"><strong>Why?</strong> Authentic Biryani relies entirely on long-grain Basmati rice, never wheat or noodles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="butter" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Murgh Makhani (Butter Chicken)</h1>
+                <p>A mild, sweet, and incredibly rich tomato-based curry cooked with butter and cream.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-5" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-5" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1.5 lbs Boneless Chicken Breasts</li>
+                        <li><input type="checkbox"> 1/4 cup Butter</li>
+                        <li><input type="checkbox"> 1 large Onion, blended to a paste</li>
+                        <li><input type="checkbox"> 1.5 cups Tomato Puree</li>
+                        <li><input type="checkbox"> 1/2 cup Heavy Cream</li>
+                        <li><input type="checkbox"> 1 tbsp Kasuri Methi (Dried Fenugreek Leaves)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Briefly pan-fry the chicken breast pieces until sealed, then remove from the pan.</li>
+                        <li>Melt the butter in the same pan. Sauté the onion paste until it loses its raw smell.</li>
+                        <li>Pour in the tomato puree, add your spices (coriander, cumin, mild chili), and simmer for 15 minutes until the oil separates from the sauce.</li>
+                        <li>Crush the Kasuri Methi between your palms and sprinkle it into the sauce.</li>
+                        <li>Return the chicken to the pan, stir in the heavy cream, and simmer for 10 minutes until the chicken is fully cooked.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-5" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-5" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Chicken & Dairy &rarr; Cauliflower & Cashew Cream</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Roast cauliflower florets instead of chicken, cook with vegan butter, and finish the sauce with a thick cashew cream.</p>
+                            <p class="hint"><strong>Why?</strong> The magic of Butter Chicken is the mild, buttery tomato gravy. Cashew cream provides the same luxurious mouthfeel as heavy dairy cream without breaking.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>This rich curry is naturally gluten-free. Just skip the naan!</p>
+                            <p class="hint"><strong>Why?</strong> The sauce gets its silky, thick texture from the pureed onions and heavy cream, requiring no flour thickeners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
