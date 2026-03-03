@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Cuisine - Recipe Studio</title>
+    <link rel="stylesheet" href="styleitalian.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Recipe Studio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="west-african.html">West African</a>
+            <a href="japanese.html">Japanese</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="indian.html">Indian</a>
+            <a href="italian.html">Italian</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="recipe-subnav">
+            <a href="#bolognese">1. Spaghetti Bolognese</a>
+            <a href="#pizza">2. Margherita Pizza</a>
+            <a href="#alfredo">3. Fettuccine Alfredo</a>
+            <a href="#eggplant">4. Eggplant Parmesan</a>
+            <a href="#risotto">5. Mushroom Risotto</a>
+        </div>
+
+        <section id="bolognese" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Classic Spaghetti Bolognese</h1>
+                <p>A hearty, traditional Italian pasta dish featuring a rich, slow-simmered meat sauce.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-1" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-1" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1 lb Ground Beef</li>
+                        <li><input type="checkbox"> 1 lb Spaghetti</li>
+                        <li><input type="checkbox"> 1 cup Crushed Tomatoes</li>
+                        <li><input type="checkbox"> 1 Medium Onion, diced</li>
+                        <li><input type="checkbox"> 2 Cloves Garlic, minced</li>
+                        <li><input type="checkbox"> 2 tbsp Olive Oil</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Heat olive oil in a large pot over medium heat. Add diced onions and minced garlic, sautéing until translucent.</li>
+                        <li>Add the ground beef, breaking it apart with a spoon, and cook until fully browned.</li>
+                        <li>Pour in the crushed tomatoes, reduce heat to low, and let the sauce simmer for 30-40 minutes.</li>
+                        <li>In a separate large pot, boil salted water and cook the spaghetti until al dente.</li>
+                        <li>Drain the pasta, plate it, and generously spoon the bolognese sauce over the top. Serve immediately.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-1" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-1" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Beef &rarr; Lentils</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Brown lentils are a fantastic plant-based substitute that mimics the texture of ground meat perfectly while soaking up the tomato sauce.</p>
+                            <p class="hint"><strong>Why?</strong> They are rich in protein, hold their shape well, and reduce the overall cooking time.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Spaghetti &rarr; Brown Rice Pasta</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use your favorite brand of brown rice or corn-based spaghetti to make this dish entirely gluten-free.</p>
+                            <p class="hint"><strong>Why?</strong> Brown rice pasta offers a very similar al dente bite compared to traditional wheat pasta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pizza" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Traditional Margherita Pizza</h1>
+                <p>A simple but perfect Neapolitan pizza with fresh basil and mozzarella.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-2" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-2" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1 lb Pizza Dough (Wheat)</li>
+                        <li><input type="checkbox"> 1/2 cup San Marzano Tomato Sauce</li>
+                        <li><input type="checkbox"> 8 oz Fresh Mozzarella</li>
+                        <li><input type="checkbox"> Fresh Basil Leaves</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Preheat your oven to 500°F (or as hot as it will go) with a pizza stone inside if you have one.</li>
+                        <li>Stretch the pizza dough onto a floured surface, forming a 12-inch circle.</li>
+                        <li>Spread the San Marzano tomato sauce evenly over the dough, leaving a small border for the crust.</li>
+                        <li>Tear the fresh mozzarella into pieces and distribute them evenly across the pizza.</li>
+                        <li>Bake for 10-12 minutes until the crust is blistered and golden. Remove and immediately top with fresh basil leaves.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-2" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-2" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Mozzarella &rarr; Cashew Cheese</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>A liquid cashew mozzarella or a high-quality store-bought vegan mozzarella will bake and blister just like dairy cheese.</p>
+                            <p class="hint"><strong>Why?</strong> Cashew-based cheeses have a higher fat content, allowing them to melt properly without separating in the high heat of the oven.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Dough &rarr; Cauliflower Crust</h4>
+                                <span class="badge">Confidence: Med</span>
+                            </div>
+                            <p>A pre-baked cauliflower crust or an almond-flour blend provides a great gluten-free base.</p>
+                            <p class="hint"><strong>Why?</strong> Cauliflower crusts crisp up beautifully when pre-baked before adding wet toppings like tomato sauce, preventing a soggy bottom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="alfredo" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Creamy Fettuccine Alfredo</h1>
+                <p>A rich, buttery pasta dish made with heavy cream and fresh parmesan.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-3" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-3" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1 lb Fettuccine</li>
+                        <li><input type="checkbox"> 1 cup Heavy Cream</li>
+                        <li><input type="checkbox"> 1 cup Grated Parmesan</li>
+                        <li><input type="checkbox"> 1/2 cup Butter</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a large pot, boil salted water and cook the fettuccine until al dente. Reserve a cup of pasta water before draining.</li>
+                        <li>While the pasta cooks, melt the butter in a large skillet over medium-low heat.</li>
+                        <li>Slowly whisk the heavy cream into the melted butter and let it gently simmer for 5 minutes until slightly thickened.</li>
+                        <li>Gradually whisk in the grated parmesan cheese until the sauce is completely smooth.</li>
+                        <li>Toss the drained pasta in the hot sauce, adding a splash of the reserved pasta water if the sauce needs to be thinned out.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-3" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-3" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Cream/Cheese &rarr; Cashew Cream</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Blended soaked cashews and nutritional yeast create a perfectly creamy, dairy-free sauce.</p>
+                            <p class="hint"><strong>Why?</strong> Soaked cashews provide the necessary heavy fats that cream would supply, and nutritional yeast adds a savory, cheesy flavor profile.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Pasta &rarr; Corn Fettuccine</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Corn-based gluten-free pasta holds up best to heavy, creamy sauces.</p>
+                            <p class="hint"><strong>Why?</strong> Corn pasta has a firmer structure than rice pasta, meaning it won't break apart or become mushy when tossed vigorously in a thick sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eggplant" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Classic Eggplant Parmesan</h1>
+                <p>Crispy breaded eggplant layered with marinara and melted cheese.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-4" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-4" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 Large Eggplants, sliced</li>
+                        <li><input type="checkbox"> 2 cups Breadcrumbs</li>
+                        <li><input type="checkbox"> 2 cups Marinara Sauce</li>
+                        <li><input type="checkbox"> 1.5 cups Mozzarella Cheese</li>
+                        <li><input type="checkbox"> 2 Eggs, beaten</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Slice eggplants into 1/2-inch rounds. Lightly salt them to draw out excess moisture, let sit for 20 minutes, then pat dry.</li>
+                        <li>Set up a breading station: dip each eggplant slice into the beaten eggs, then coat thoroughly in the breadcrumbs.</li>
+                        <li>Fry the breaded slices in oil over medium heat until golden brown and crispy on both sides. Drain on paper towels.</li>
+                        <li>In a 9x13 baking dish, spread a thin layer of marinara. Add a layer of eggplant, top with more marinara, and a layer of mozzarella. Repeat until ingredients are used.</li>
+                        <li>Bake at 375°F for 25-30 minutes until the cheese is bubbling and golden on top.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-4" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-4" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Cheese/Egg &rarr; Almond Ricotta & Flax Egg</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use a flax egg (ground flax + water) for breading, and layer the dish with almond milk ricotta and plant-based mozzarella shreds.</p>
+                            <p class="hint"><strong>Why?</strong> A flax egg binds the breading perfectly without animal products, while almond ricotta closely mimics the creamy layers of traditional cheese.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Breadcrumbs &rarr; GF Panko</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Gluten-free panko breadcrumbs will give the eggplant the exact same crispy exterior.</p>
+                            <p class="hint"><strong>Why?</strong> GF Panko tends to absorb slightly less oil during frying than standard gluten-free breadcrumbs, keeping the eggplant crisp instead of greasy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="risotto" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Wild Mushroom Risotto</h1>
+                <p>A creamy, savory rice dish slowly cooked with earthy mushrooms and broth.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-5" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-5" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1.5 cups Arborio Rice</li>
+                        <li><input type="checkbox"> 1 lb Mixed Mushrooms, sliced</li>
+                        <li><input type="checkbox"> 4 cups Chicken Broth</li>
+                        <li><input type="checkbox"> 1/4 cup Butter</li>
+                        <li><input type="checkbox"> 1/4 cup Parmesan Cheese</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Heat the chicken broth in a separate small pot and keep it warm over low heat.</li>
+                        <li>In a large, wide pan, sauté the sliced mushrooms in a little oil until browned. Remove them from the pan and set aside.</li>
+                        <li>In the same pan, melt half the butter and toast the Arborio rice for 2 minutes until the edges of the grains are translucent.</li>
+                        <li>Slowly ladle in the warm broth, half a cup at a time, stirring continuously. Wait until the liquid is almost completely absorbed before adding more.</li>
+                        <li>Once the rice is tender and creamy (about 20 minutes), remove from heat and vigorously stir in the cooked mushrooms, remaining butter, and parmesan.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-5" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-5" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Butter/Broth &rarr; Veggie Stock & Olive Oil</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use a rich mushroom or vegetable stock, and finish the dish with a high-quality extra virgin olive oil instead of butter.</p>
+                            <p class="hint"><strong>Why?</strong> The continuous stirring is what makes risotto creamy by releasing the rice starches. You don't actually need butter for the texture, just the oil for a rich mouthfeel.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check Broth Labels</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Arborio rice is naturally gluten-free! Just ensure your store-bought broth is certified GF.</p>
+                            <p class="hint"><strong>Why?</strong> While the base ingredients are safe, many commercial broths use yeast extracts or flavorings that contain hidden gluten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
