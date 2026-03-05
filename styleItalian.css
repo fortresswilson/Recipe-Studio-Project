@@ -1,12 +1,16 @@
-/* Base Styles & Accessibility */
+/* Base Styles & Accessibility - MATCHING MAIN PAGE AESTHETICS */
 :root {
-    --bg-color: #f9f9f9;
-    --text-color: #333;
-    --nav-bg: #000;
-    --nav-text: #fff;
-    --card-bg: #e0e0e0;
-    --primary-accent: #2e7d32; /* WCAG AA compliant green */
-    --focus-outline: #005fcc;
+    --bg-color: #0f0f0f;
+    --nav-bg: #0b0b0b;
+    --text-color: #ffffff;
+    --muted-text: rgba(255, 255, 255, 0.75);
+    --line-color: rgba(255, 255, 255, 0.12);
+    --card-bg: #181818;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --primary-accent: #ffffff;
+    --accent-text: #000000;
+    --focus-outline: #ffb703; /* Matching the yellow tag from main page */
+    --radius: 999px;
 }
 
 /* Enable smooth scrolling for the recipe menu */
@@ -15,7 +19,7 @@ html {
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
@@ -23,67 +27,120 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
+/* Navigation - Matching Main Page Layout & Alignment */
 nav {
     background-color: var(--nav-bg);
-    color: var(--nav-text);
-    padding: 1rem 2rem;
+    color: var(--text-color);
+    /* This padding trick aligns the nav content with your 1100px main container */
+    padding: 14px max(16px, calc((100% - 1100px) / 2));
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--line-color);
 }
 
-nav a {
-    color: var(--nav-text);
+nav .logo {
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--muted-text);
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+    padding: 6px 2px;
+    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    color: #ccc;
+.nav-links a:hover, .nav-links a.active {
+    color: var(--text-color);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: var(--text-color);
+    transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    width: 100%;
+}
+
+/* Responsive fallback for the recipe pages */
+@media (max-width: 860px) {
+    nav {
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px 16px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
 }
 
 /* Main Content & Recipe Sub-navigation */
 main {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 16px;
 }
 
 .recipe-subnav {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
     margin-bottom: 3rem;
-    padding: 1.5rem;
-    background: #e0e0e0;
-    border-radius: 8px;
+    padding: 1.5rem 0;
     justify-content: center;
+    border-bottom: 1px solid var(--line-color);
 }
 
 .recipe-subnav a {
     text-decoration: none;
-    color: var(--primary-accent);
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--primary-accent);
-    border-radius: 20px;
-    transition: all 0.3s ease;
+    color: var(--text-color);
+    font-weight: 900;
+    font-size: 0.85rem;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: var(--radius);
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    background: transparent;
 }
 
 .recipe-subnav a:hover {
-    background: var(--primary-accent);
-    color: white;
+    background: var(--text-color);
+    color: var(--accent-text);
+    transform: translateY(-2px);
 }
 
 /* Recipe Blocks Structure */
 .recipe-block {
     margin-bottom: 5rem;
-    scroll-margin-top: 2rem; /* Creates breathing room when scrolling */
-    padding-bottom: 3rem;
-    border-bottom: 2px dashed #ccc;
+    scroll-margin-top: 5rem; /* Creates breathing room when scrolling from sticky nav */
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--line-color);
 }
 
 .recipe-block:last-child {
@@ -94,10 +151,22 @@ main {
     margin-bottom: 2rem;
 }
 
+.recipe-header h1 {
+    margin: 0 0 10px;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.recipe-header p {
+    margin: 0;
+    color: var(--muted-text);
+    font-size: 1.05rem;
+    max-width: 70ch;
+}
+
 .recipe-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 24px;
 }
 
 @media (min-width: 768px) {
@@ -106,29 +175,57 @@ main {
     }
 }
 
-/* Gray Cards with Box Shadows */
+/* Dark Mode Cards with Box Shadows */
 .card {
     background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    padding: clamp(16px, 3vw, 24px);
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card:hover, .suggestion-card:hover {
-    transform: scale(1.02);
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+.recipe-content h2, .customization-section h2 {
+    margin-top: 0;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 12px;
+    margin-bottom: 1.2rem;
 }
 
 .ingredients-list {
     list-style: none;
     padding: 0;
+    color: var(--muted-text);
 }
 
 .ingredients-list li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+}
+
+.ingredients-list input[type="checkbox"] {
+    accent-color: var(--text-color);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.recipe-content ol {
+    color: var(--muted-text);
+    padding-left: 20px;
+}
+
+.recipe-content ol li {
+    margin-bottom: 1rem;
+    padding-left: 8px;
 }
 
 /* CSS-Only Recommendation Engine Logic */
@@ -152,80 +249,123 @@ main {
 
 .chip {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--primary-accent);
-    border-radius: 20px;
+    padding: 6px 14px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: var(--radius);
     cursor: pointer;
-    font-weight: bold;
-    color: var(--primary-accent);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 900;
+    font-size: 0.85rem;
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .chip:hover {
-    background-color: #e8f5e9;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .chip:focus-visible, input[type="checkbox"]:focus-visible + label, a:focus-visible {
-    outline: 3px solid var(--focus-outline);
-    outline-offset: 2px;
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 3px;
+}
+
+.customization-section h3 {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.suggestions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .suggestion-card {
-    background-color: #fff;
-    border-left: 5px solid var(--primary-accent);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #111; /* Slightly darker than card-bg for contrast */
+    border-left: 4px solid var(--text-color);
+    border-top: 1px solid var(--card-border);
+    border-right: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
     display: none;
     opacity: 0;
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-2px);
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+    gap: 10px;
 }
 
 .card-header h4 {
     margin: 0;
+    font-size: 0.95rem;
 }
 
 .badge {
-    background-color: var(--primary-accent);
-    color: white;
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    font-weight: bold;
+    background-color: var(--text-color);
+    color: var(--accent-text);
+    padding: 4px 10px;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    font-weight: 900;
+    white-space: nowrap;
 }
 
-/* Scoped State-based UI toggles using Classes instead of IDs */
+.suggestion-card p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    margin: 0 0 12px;
+}
+
+.suggestion-card p.hint {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+/* Scoped State-based UI toggles using Classes */
 .filter-vegan:checked ~ .recipe-grid .customization-section .filter-chips .chip-vegan {
-    background-color: var(--primary-accent);
-    color: white;
+    background-color: var(--text-color);
+    color: var(--accent-text);
+    border-color: var(--text-color);
 }
 
 .filter-gf:checked ~ .recipe-grid .customization-section .filter-chips .chip-gf {
-    background-color: var(--primary-accent);
-    color: white;
+    background-color: var(--text-color);
+    color: var(--accent-text);
+    border-color: var(--text-color);
 }
 
 .filter-vegan:checked ~ .recipe-grid .customization-section .suggestions-container .vegan-card {
     display: block;
-    animation: fadeInOpacity 0.5s forwards;
+    animation: fadeInOpacity 0.4s forwards;
 }
 
 .filter-gf:checked ~ .recipe-grid .customization-section .suggestions-container .gf-card {
     display: block;
-    animation: fadeInOpacity 0.5s forwards;
+    animation: fadeInOpacity 0.4s forwards;
 }
 
 @keyframes fadeInOpacity {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { 
+        opacity: 0; 
+        transform: translateY(10px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
