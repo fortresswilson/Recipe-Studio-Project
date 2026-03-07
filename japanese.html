@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Cuisine - Recipe Studio</title>
+    <link rel="stylesheet" href="styleItalian.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Recipe Studio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="west-african.html">West African</a>
+            <a href="japanese.html" class="active">Japanese</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="indian.html">Indian</a>
+            <a href="italian.html">Italian</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="recipe-subnav">
+            <a href="#ramen">1. Tonkotsu Ramen</a>
+            <a href="#sushi">2. Spicy Tuna Sushi Rolls</a>
+            <a href="#katsu">3. Chicken Katsu</a>
+            <a href="#teriyaki">4. Teriyaki Salmon</a>
+            <a href="#gyudon">5. Beef Gyudon</a>
+        </div>
+
+        <section id="ramen" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Tonkotsu Ramen</h1>
+                <p>A deeply rich, cloudy pork broth served with fresh alkaline noodles and tender braised pork belly.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-1" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-1" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/Japanese Recipes/tonkotsu.jpg.webp" alt="Tonkotsu Ramen" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 3 lbs Pork Bones (for broth)</li>
+                        <li><input type="checkbox"> 4 portions Fresh Ramen Noodles</li>
+                        <li><input type="checkbox"> 1/4 cup Soy Sauce & 1/4 cup Mirin (for Tare)</li>
+                        <li><input type="checkbox"> 1 lb Chashu (Braised Pork Belly)</li>
+                        <li><input type="checkbox"> 4 Soft-boiled Eggs (Ajitsuke Tamago)</li>
+                        <li><input type="checkbox"> Chopped Scallions & Nori sheets</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Boil pork bones heavily for 12 hours until the broth is milky white, thick, and collagen-rich.</li>
+                        <li>In a small pan, simmer soy sauce and mirin to create the "tare" (seasoning base).</li>
+                        <li>Boil the fresh ramen noodles in separate water for 2-3 minutes until chewy.</li>
+                        <li>In a serving bowl, add 2 tablespoons of the tare, then ladle in the boiling hot pork broth.</li>
+                        <li>Add the noodles, then top with slices of chashu, a halved soft-boiled egg, scallions, and a sheet of nori.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-1" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-1" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Broth &rarr; Soy Milk & Kombu</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Create a creamy vegan broth using unsweetened soy milk, kombu (kelp) dashi, and miso paste.</p>
+                            <p class="hint"><strong>Why?</strong> Tonkotsu is famous for its milky, creamy texture. Boiling unsweetened soy milk replicates this creamy mouthfeel brilliantly without boiling bones for 12 hours.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Noodles & Soy Sauce</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use gluten-free rice noodles (pho or vermicelli style) and replace the soy sauce in the tare with Tamari.</p>
+                            <p class="hint"><strong>Why?</strong> Traditional ramen noodles get their distinct chew from wheat gluten and alkaline salts. Rice noodles are the safest alternative.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sushi" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Spicy Tuna Sushi Rolls</h1>
+                <p>Classic Maki rolls filled with fresh sashimi-grade tuna, spicy mayonnaise, and crisp cucumber.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-2" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-2" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/Japanese Recipes/tunaRoll.jpg" alt="Spicy Tuna Sushi Rolls" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 cups Sushi Rice (short grain), cooked & vinegared</li>
+                        <li><input type="checkbox"> 4 Nori (Seaweed) Sheets</li>
+                        <li><input type="checkbox"> 8 oz Sashimi-grade Tuna, finely diced</li>
+                        <li><input type="checkbox"> 2 tbsp Kewpie Mayo & 1 tbsp Sriracha</li>
+                        <li><input type="checkbox"> 1/2 Cucumber, julienned</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a bowl, gently mix the diced tuna with the Kewpie mayonnaise and sriracha until well coated.</li>
+                        <li>Place a sheet of nori rough-side up on a bamboo rolling mat wrapped in plastic wrap.</li>
+                        <li>Wet your hands, grab a handful of sushi rice, and spread it evenly across the nori, leaving a 1-inch gap at the top.</li>
+                        <li>Lay a line of the spicy tuna mixture and cucumber strips across the bottom third of the rice.</li>
+                        <li>Roll tightly using the bamboo mat. Slice the roll into 8 pieces using a sharp, wet knife.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-2" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-2" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Tuna &rarr; Mashed Chickpeas or Tofu</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Mash chickpeas or firm tofu with vegan mayo and sriracha to create a "spicy mock-tuna" filling.</p>
+                            <p class="hint"><strong>Why?</strong> The primary flavor profile of a spicy tuna roll actually comes from the sriracha, mayo, and seaweed. Tofu or chickpeas mimic the soft texture of minced raw fish perfectly.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check the Vinegar & Mayo</h4>
+                                <span class="badge">Confidence: Med</span>
+                            </div>
+                            <p>Ensure your rice vinegar is pure (not malt vinegar) and serve with Tamari instead of soy sauce.</p>
+                            <p class="hint"><strong>Why?</strong> Sushi rice and raw fish are naturally gluten-free, but cross-contamination often happens with the dipping sauces or flavored vinegars.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="katsu" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Chicken Katsu</h1>
+                <p>A Japanese comfort food classic: pounded chicken breast breaded in panko and fried until shatteringly crisp.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-3" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-3" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/Japanese Recipes/Chicken-Katsu.jpg" alt="Chicken Katsu" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 Boneless Skinless Chicken Breasts</li>
+                        <li><input type="checkbox"> 1 cup Panko Breadcrumbs</li>
+                        <li><input type="checkbox"> 1/2 cup All-Purpose Flour</li>
+                        <li><input type="checkbox"> 2 Eggs, beaten</li>
+                        <li><input type="checkbox"> Tonkatsu Sauce (for serving)</li>
+                        <li><input type="checkbox"> Shredded Green Cabbage (for serving)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Pound the chicken breasts to an even 1/2-inch thickness and season lightly with salt and pepper.</li>
+                        <li>Set up a breading station: dredge the chicken in flour, dip into the beaten eggs, and press firmly into the panko breadcrumbs.</li>
+                        <li>Heat 1/2 inch of oil in a skillet over medium heat (around 350°F).</li>
+                        <li>Fry the chicken for 4-5 minutes per side until golden brown and cooked through. Drain on a wire rack.</li>
+                        <li>Slice the chicken into strips and serve alongside a mound of shredded cabbage, drizzled heavily with Tonkatsu sauce.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-3" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-3" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Chicken &rarr; Firm Tofu (Tofu Katsu)</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Press extra-firm tofu, freeze it, thaw it, and bread it using a flax-egg batter before frying.</p>
+                            <p class="hint"><strong>Why?</strong> Freezing and thawing tofu completely changes its cellular structure, making it remarkably chewy, dense, and "meaty" like chicken breast.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Panko/Flour &rarr; GF Panko & Cornstarch</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Dredge the chicken in cornstarch instead of flour, and use a gluten-free panko (usually made from rice flour).</p>
+                            <p class="hint"><strong>Why?</strong> Traditional panko is made from baked wheat bread. GF rice panko absorbs less oil and actually stays crispier for longer!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teriyaki" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Teriyaki Salmon</h1>
+                <p>Crispy-skinned salmon fillets glazed in a homemade, sticky-sweet soy and mirin reduction.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-4" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-4" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/Japanese Recipes/TeriyakiSalmon.jpg" alt="Teriyaki Salmon" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 Salmon Fillets (skin-on)</li>
+                        <li><input type="checkbox"> 1/4 cup Soy Sauce</li>
+                        <li><input type="checkbox"> 1/4 cup Mirin (Sweet Rice Wine)</li>
+                        <li><input type="checkbox"> 2 tbsp Sake</li>
+                        <li><input type="checkbox"> 1 tbsp Sugar</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a small bowl, whisk together the soy sauce, mirin, sake, and sugar to create the teriyaki sauce.</li>
+                        <li>Heat a little oil in a non-stick skillet over medium-high heat. Sear the salmon skin-side down until very crispy (about 4 minutes).</li>
+                        <li>Flip the salmon and cook for 1 more minute. Remove the salmon from the pan and wipe out excess oil.</li>
+                        <li>Pour the teriyaki sauce mixture into the pan. Let it bubble and reduce for 2-3 minutes until it becomes a thick syrup.</li>
+                        <li>Return the salmon to the pan, baste it with the sticky glaze, and serve immediately over steamed rice.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-4" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-4" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Salmon &rarr; Tempeh or Eggplant</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Steam slices of tempeh or score a halved eggplant, pan-fry, and glaze exactly like the fish.</p>
+                            <p class="hint"><strong>Why?</strong> The sweet and salty teriyaki glaze is the star of this dish. Tempeh offers great protein, while eggplant becomes buttery soft and soaks up the sauce perfectly.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Soy Sauce &rarr; Tamari</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use Tamari or coconut aminos in your teriyaki glaze.</p>
+                            <p class="hint"><strong>Why?</strong> The only gluten in this recipe comes from the wheat used to brew standard soy sauce. Tamari creates an identical sticky glaze without the gluten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gyudon" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Beef Gyudon (Rice Bowl)</h1>
+                <p>A fast, savory Japanese fast-food staple of thinly shaved beef and onions simmered in a sweet dashi broth.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-5" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-5" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/Japanese Recipes/gyudon.jpg" alt="Beef Gyudon (Rice Bowl)" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1 lb Ribeye or Chuck, sliced paper-thin</li>
+                        <li><input type="checkbox"> 1 Large Onion, thinly sliced</li>
+                        <li><input type="checkbox"> 1 cup Dashi (Japanese Soup Stock)</li>
+                        <li><input type="checkbox"> 3 tbsp Soy Sauce & 2 tbsp Mirin</li>
+                        <li><input type="checkbox"> 1 tbsp Sugar</li>
+                        <li><input type="checkbox"> Steamed White Rice (for serving)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a medium skillet, combine the dashi stock, soy sauce, mirin, and sugar. Bring to a gentle simmer.</li>
+                        <li>Add the sliced onions to the simmering broth and cook for 5 minutes until tender and translucent.</li>
+                        <li>Add the paper-thin beef slices to the pan, separating them with chopsticks so they don't clump.</li>
+                        <li>Simmer for 3-5 minutes until the beef is just cooked through (do not overcook, or it will become tough).</li>
+                        <li>Spoon the beef, onions, and plenty of the savory broth generously over bowls of hot steamed rice.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-5" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-5" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Beef/Dashi &rarr; Shiitake Mushrooms & Kombu Dashi</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Use thinly sliced shiitake and oyster mushrooms instead of beef, and ensure your dashi is made from kombu (kelp) rather than bonito (fish flakes).</p>
+                            <p class="hint"><strong>Why?</strong> Mushrooms offer a fantastic savory, chewy texture and release their own juices into the sweet broth, creating a deeply satisfying umami bowl.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Swap Soy Sauce &rarr; Tamari</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Just swap the soy sauce for Tamari or a gluten-free soy alternative.</p>
+                            <p class="hint"><strong>Why?</strong> Like many Japanese simmered dishes, the only hidden gluten is in the soy sauce. The meat, rice, and onions are all perfectly safe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

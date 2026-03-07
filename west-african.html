@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West African Cuisine - Recipe Studio</title>
+    <link rel="stylesheet" href="styleItalian.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Recipe Studio</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="west-african.html" class="active">West African</a>
+            <a href="japanese.html">Japanese</a>
+            <a href="mexican.html">Mexican</a>
+            <a href="indian.html">Indian</a>
+            <a href="italian.html">Italian</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="recipe-subnav">
+            <a href="#jollof">1. Classic Jollof Rice</a>
+            <a href="#egusi">2. Egusi Soup</a>
+            <a href="#suya">3. Beef Suya</a>
+            <a href="#maafe">4. Groundnut Soup</a>
+            <a href="#redred">5. Red Red (Plantain & Stew)</a>
+        </div>
+
+        <section id="jollof" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Classic Jollof Rice</h1>
+                <p>A vibrant, one-pot rice dish cooked in a rich, spicy tomato and red bell pepper stew.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-1" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-1" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/West African Recipes/jollof.jpg.webp" alt="Classic Jollof Rice" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 3 cups Long-grain Parboiled Rice</li>
+                        <li><input type="checkbox"> 4 Roma Tomatoes & 2 Red Bell Peppers</li>
+                        <li><input type="checkbox"> 1 Scotch Bonnet Pepper & 2 Onions</li>
+                        <li><input type="checkbox"> 1/2 cup Tomato Paste</li>
+                        <li><input type="checkbox"> 3 cups Chicken Broth</li>
+                        <li><input type="checkbox"> 1 tbsp Thyme & 2 Bay Leaves</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Blend the tomatoes, red bell peppers, scotch bonnet, and one onion into a smooth puree. Boil the puree down in a pot until the water evaporates.</li>
+                        <li>In a large, heavy-bottomed pot, fry diced onions in vegetable oil. Add tomato paste and fry for 5 minutes until deep red.</li>
+                        <li>Pour in the boiled pepper puree, add seasonings, and simmer for 15 minutes to create the base stew (obe ata).</li>
+                        <li>Wash the rice thoroughly to remove starch. Stir the rice into the stew, adding the chicken broth and bay leaves.</li>
+                        <li>Cover tightly with foil and a lid to trap steam. Cook on very low heat for 30 minutes until rice is tender and bottom is slightly charred (the "party rice" flavor).</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-1" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-1" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Broth &rarr; Vegetable Stock</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Replace the chicken broth with a rich vegetable stock or water and vegetable bouillon.</p>
+                            <p class="hint"><strong>Why?</strong> The primary flavor of Jollof comes from the roasted red peppers and tomatoes, so swapping the stock keeps the dish entirely authentic and plant-based.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Check Bouillon Cubes</h4>
+                                <span class="badge">Confidence: Med</span>
+                            </div>
+                            <p>Jollof rice is naturally gluten-free! Just be cautious with your choice of stock/bouillon cubes.</p>
+                            <p class="hint"><strong>Why?</strong> Some commercial bouillon cubes (like certain Maggi or Knorr varieties) use wheat starch as a filler, so always check the label.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="egusi" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Egusi Soup</h1>
+                <p>A rich, savory, and thick stew made from ground melon seeds and leafy greens.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-2" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-2" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/West African Recipes/Egusi.jpg" alt="Egusi Soup" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 cups Ground Egusi (Melon Seeds)</li>
+                        <li><input type="checkbox"> 1/2 cup Palm Oil</li>
+                        <li><input type="checkbox"> 1 lb Assorted Meat (Beef, Tripe) & Dried Fish</li>
+                        <li><input type="checkbox"> 1 cup Chopped Spinach or Bitterleaf</li>
+                        <li><input type="checkbox"> 2 tbsp Ground Crayfish</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Boil the meat with onions and bouillon until tender. Reserve the meat stock.</li>
+                        <li>In a small bowl, mix the ground egusi with a little water to form a thick paste.</li>
+                        <li>Heat the palm oil in a large pot. Add diced onions, then carefully drop spoonfuls of the egusi paste into the oil. Fry for 10 minutes until crumbly.</li>
+                        <li>Stir in the reserved meat stock, crayfish, and dried fish. Simmer for 15 minutes.</li>
+                        <li>Fold in the chopped spinach, let it wilt for 2 minutes, and serve hot with fufu or pounded yam.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-2" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-2" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Meat/Crayfish &rarr; Tofu & Kelp Powder</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Replace the meat with fried firm tofu or mushrooms, and substitute the crayfish with a pinch of kelp powder or nori flakes.</p>
+                            <p class="hint"><strong>Why?</strong> Ground crayfish provides a deep umami, sea-like flavor essential to the dish, which seaweed/kelp replicates beautifully.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Egusi seeds, meats, and leafy greens contain zero gluten.</p>
+                            <p class="hint"><strong>Why?</strong> The soup gets its thick, luxurious texture entirely from the protein-rich melon seeds, not flour.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="suya" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Spicy Beef Suya</h1>
+                <p>Thinly sliced, skewered beef heavily marinated in a spicy, roasted peanut spice blend and grilled to perfection.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-3" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-3" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/West African Recipes/Suya.jpg" alt="Spicy Beef Suya" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1.5 lbs Beef Sirloin, cut into thin strips</li>
+                        <li><input type="checkbox"> 1 cup Roasted Peanut Powder</li>
+                        <li><input type="checkbox"> 2 tbsp Cayenne Pepper & 1 tbsp Ginger Powder</li>
+                        <li><input type="checkbox"> 1 tsp Garlic Powder & 1 tsp Onion Powder</li>
+                        <li><input type="checkbox"> Vegetable Oil (for brushing)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a bowl, mix the peanut powder, cayenne, ginger, garlic, and onion powder to create the Yaji (Suya spice) blend.</li>
+                        <li>Thread the thin beef strips tightly onto soaked wooden skewers.</li>
+                        <li>Brush the beef skewers generously with oil, then press them firmly into the dry Suya spice blend to coat entirely.</li>
+                        <li>Grill over hot coals or bake at 400°F for 12-15 minutes, flipping once, until the edges are charred.</li>
+                        <li>Serve immediately with fresh sliced red onions, tomatoes, and extra spice mix on the side.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-3" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-3" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Beef &rarr; Seitan or Portobello Mushrooms</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Thread thick strips of seitan or whole portobello mushrooms onto the skewers instead of beef.</p>
+                            <p class="hint"><strong>Why?</strong> The intense, nutty, spicy flavor of Suya comes entirely from the peanut coating, which adheres perfectly to dense mushrooms or plant proteins.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>As long as your spices are pure, this street food classic is 100% gluten-free.</p>
+                            <p class="hint"><strong>Why?</strong> The crust is formed from ground peanuts rather than breading or flour.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="maafe" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Maafe (Groundnut Soup)</h1>
+                <p>A creamy, savory, and mildly spicy peanut butter stew loaded with chicken and root vegetables.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-4" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-4" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/West African Recipes/Maafe.jpg.webp" alt="Maafe (Groundnut Soup)" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 1 cup Unsweetened Peanut Butter</li>
+                        <li><input type="checkbox"> 1.5 lbs Chicken pieces</li>
+                        <li><input type="checkbox"> 2 Sweet Potatoes, cubed</li>
+                        <li><input type="checkbox"> 3 tbsp Tomato Paste</li>
+                        <li><input type="checkbox"> 1 large Onion, chopped</li>
+                        <li><input type="checkbox"> 4 cups Chicken Broth</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Brown the chicken pieces in a large pot with a little oil, then remove and set aside.</li>
+                        <li>In the same pot, sauté the onions and tomato paste until the paste darkens.</li>
+                        <li>Whisk the peanut butter with a cup of warm chicken broth until smooth, then add to the pot along with the remaining broth.</li>
+                        <li>Return the chicken to the pot and bring to a simmer.</li>
+                        <li>Add the cubed sweet potatoes and simmer for 30 minutes until the chicken is cooked through and the oil separates to the top of the rich stew.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-4" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-4" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Swap Chicken &rarr; Chickpeas and Kale</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Omit the chicken and load the stew with canned chickpeas, extra sweet potatoes, and fresh kale.</p>
+                            <p class="hint"><strong>Why?</strong> The peanut butter base is incredibly hearty. Chickpeas add great texture and protein without competing with the rich, nutty flavor.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>This savory peanut stew requires no modifications to be gluten-free.</p>
+                            <p class="hint"><strong>Why?</strong> African stews rarely use roux (flour/butter). The thickness here comes naturally from the creamy peanut butter and starch from the sweet potatoes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="redred" class="recipe-block">
+            <div class="recipe-header">
+                <h1>Red Red (Black-Eyed Pea Stew)</h1>
+                <p>A beloved Ghanaian stew made with tender black-eyed peas, palm oil, and served with sweet fried plantains.</p>
+            </div>
+            
+            <input type="checkbox" id="vegan-5" class="filter-vegan sr-only" aria-label="Toggle Vegan">
+            <input type="checkbox" id="gf-5" class="filter-gf sr-only" aria-label="Toggle Gluten-Free">
+            
+            <div class="recipe-grid">
+                <div class="recipe-content card">
+                    <img src="images/West African Recipes/RedRed.jpg" alt="Red Red (Black-Eyed Pea Stew)" style="max-width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 12px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox"> 2 cups Dried Black-Eyed Peas, soaked</li>
+                        <li><input type="checkbox"> 1/2 cup Red Palm Oil</li>
+                        <li><input type="checkbox"> 3 ripe Tomatoes, blended</li>
+                        <li><input type="checkbox"> 1 Onion, finely chopped</li>
+                        <li><input type="checkbox"> 2 Ripe Plantains (for frying on the side)</li>
+                    </ul>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Boil the soaked black-eyed peas in water until very tender and soft, then drain.</li>
+                        <li>Heat the red palm oil in a saucepan. Sauté the onions until translucent.</li>
+                        <li>Add the blended tomatoes, salt, and pepper. Fry the sauce for about 15 minutes until it reduces and thickens.</li>
+                        <li>Gently fold the cooked black-eyed peas into the tomato stew. Simmer for 10 minutes to let the flavors marry.</li>
+                        <li>Slice the ripe plantains, fry them in oil until golden and caramelized, and serve alongside the stew.</li>
+                    </ol>
+                </div>
+                <div class="customization-section">
+                    <h2>Customize Recipe</h2>
+                    <div class="filter-chips">
+                        <label for="vegan-5" class="chip chip-vegan" tabindex="0">Vegan</label>
+                        <label for="gf-5" class="chip chip-gf" tabindex="0">Gluten-free</label>
+                    </div>
+                    <h3>Suggested Next Steps</h3>
+                    <div class="suggestions-container">
+                        <div class="suggestion-card vegan-card">
+                            <div class="card-header">
+                                <h4>Naturally Vegan</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>This dish is entirely plant-based by design!</p>
+                            <p class="hint"><strong>Why?</strong> Red Red relies on the savory depth of red palm oil and sweet tomatoes rather than meat for its rich flavor.</p>
+                        </div>
+                        <div class="suggestion-card gf-card">
+                            <div class="card-header">
+                                <h4>Naturally Gluten-Free</h4>
+                                <span class="badge">Confidence: High</span>
+                            </div>
+                            <p>Beans, plantains, and palm oil are completely gluten-free.</p>
+                            <p class="hint"><strong>Why?</strong> The creaminess of the dish comes from allowing the black-eyed peas to cook until they naturally break down and thicken the sauce.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
