@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fcfaf8; 
+    background-color: #fcfaf8;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: #333;
     padding: 40px 20px;
@@ -16,18 +16,18 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .theme-heading {
-    color: #2c3e50; 
+    color: #2c3e50;
 }
 
 h1, h2 {
     color: #2c3e50;
 }
 
-.hub-header-card, .team-card, .time-tracking-card {
+.hub-header-card, .team-card, .time-tracking-card, .kanban-card {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 35px 40px;
@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 .track-badge {
-    background-color: #d35400; 
+    background-color: #d35400;
     color: white;
     font-size: 0.75rem;
     font-weight: 700;
@@ -121,12 +121,12 @@ h1, h2 {
 
 .duty-column h3 i {
     font-size: 0.85rem;
-    color: #d35400; 
+    color: #d35400;
 }
 
 .task-list {
     list-style-type: disc;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
 .task-list li {
@@ -139,6 +139,24 @@ h1, h2 {
 .task-list li::marker {
     color: #d35400; 
     font-size: 1.1rem;
+}
+
+.kanban-card {
+    padding: 30px 40px;
+}
+
+.kanban-image-wrapper {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.kanban-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .time-tracking-card {
@@ -172,7 +190,7 @@ h1, h2 {
     color: #333;
     font-size: 0.85rem;
     padding: 10px 5px;
-    border-bottom: 2px solid #2c3e50; 
+    border-bottom: 2px solid #2c3e50;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -185,7 +203,7 @@ h1, h2 {
 }
 
 .tracking-table td.total-hours {
-    color: #d35400; 
+    color: #d35400;
     font-weight: bold;
 }
 
