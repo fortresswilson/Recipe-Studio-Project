@@ -18,10 +18,10 @@
     <ul class="nav-links">
       <li><a class="nav-link active" href="#">Home</a></li>
       <li><a class="nav-link" href="#cuisines">Cuisines</a></li>
-      <li><a class="nav-link" href="#recipes">Recipes</a></li>
-      <li><a class="nav-link" href="#about">About</a></li>
-      <li><a class="nav-link" href="#contact">Contact</a></li>
-      <li class="nav-cta"><a class="btn" href="#recipes">Explore</a></li>
+      <li><a class="nav-link" href="west-african.html">Recipes</a></li>
+      <li><a class="nav-link" href="#feature">About</a></li>
+      <li><a class="nav-link" href="#advisor">Recipe advisor</a></li>
+      <li class="nav-cta"><a class="btn" href="#cuisines">Explore</a></li>
     </ul>
   </nav>
 </header>
@@ -40,7 +40,7 @@
       <div class="overlay">
         <h2>West African Flavors</h2>
         <p>Jollof, Suya, Egusi & more</p>
-        <a href="#recipes" class="hero-btn">Explore</a>
+        <a href="west-african.html" class="hero-btn">Explore</a>
       </div>
     </div>
 
@@ -48,7 +48,7 @@
       <div class="overlay">
         <h2>Indian Classics</h2>
         <p>Rich curries and bold spices</p>
-        <a href="#recipes" class="hero-btn">Explore</a>
+        <a href="indian.html" class="hero-btn">Explore</a>
       </div>
     </div>
 
@@ -56,7 +56,7 @@
       <div class="overlay">
         <h2>Japanese Favorites</h2>
         <p>Sushi, ramen, and comfort bowls</p>
-        <a href="#recipes" class="hero-btn">Explore</a>
+        <a href="japanese.html" class="hero-btn">Explore</a>
       </div>
     </div>
 
@@ -64,7 +64,7 @@
       <div class="overlay">
         <h2>Italian Comfort</h2>
         <p>Pasta, pizza, and tradition</p>
-        <a href="#recipes" class="hero-btn">Explore</a>
+        <a href="italian.html" class="hero-btn">Explore</a>
       </div>
     </div>
 
@@ -72,7 +72,7 @@
       <div class="overlay">
         <h2>Mexican Street Food</h2>
         <p>Tacos, salsas, and bold bites</p>
-        <a href="#recipes" class="hero-btn">Explore</a>
+        <a href="mexican.html" class="hero-btn">Explore</a>
       </div>
     </div>
 
@@ -162,9 +162,109 @@
 
     </div>
   </section>
+  <!-- AI-INSPIRED RECIPE ADVISOR -->
+<section class="advisor-section"> <section class="advisor-section" id="advisor">
+  <div class="advisor-wrap">
+    <div class="advisor-header">
+      <h2>Smart Recipe Advisor</h2>
+      <p class="typewriter">Get a recommendation based on your mood.</p>
+    </div>
+
+    <!-- hidden radio buttons -->
+    <input type="radio" name="advisor" id="pick-spicy" checked>
+    <input type="radio" name="advisor" id="pick-comfort">
+    <input type="radio" name="advisor" id="pick-quick">
+    <input type="radio" name="advisor" id="pick-vegetarian">
+    <input type="radio" name="advisor" id="pick-stew">
+
+    <!-- option buttons -->
+    <div class="advisor-options">
+      <label for="pick-spicy">Spicy</label>
+      <label for="pick-comfort">Comfort Food</label>
+      <label for="pick-quick">Quick Meal</label>
+      <label for="pick-vegetarian">Vegetarian</label>
+      <label for="pick-stew">Rich Stew</label>
+    </div>
+
+    <!-- results -->
+    <div class="advisor-results">
+
+      <!-- SPICY -->
+      <article class="advisor-result spicy-result">
+        <img src="images/West African Recipes/Suya.jpg" alt="Spicy Beef Suya">
+        <div class="advisor-result-content">
+          <span class="advisor-tag">Recommended for you</span>
+          <h3>Spicy Beef Suya</h3>
+          <p>A smoky, spicy grilled West African dish with bold peanut seasoning.</p>
+          <div class="advisor-action-row">
+            <a href="west-african.html" class="advisor-btn">Browse West African Dishes</a>
+            <a href="west-african.html#suya" class="advisor-btn ghost-advisor-btn">See Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- COMFORT -->
+      <article class="advisor-result comfort-result">
+        <img src="images/Japanese Recipes/tonkotsu.jpg.webp" alt="Tonkotsu Ramen">
+        <div class="advisor-result-content">
+          <span class="advisor-tag">Recommended for you</span>
+          <h3>Tonkotsu Ramen</h3>
+          <p>A warm, rich, comforting bowl of noodles perfect for a cozy meal.</p>
+          <div class="advisor-action-row">
+            <a href="japanese.html" class="advisor-btn">Browse Japanese Dishes</a>
+            <a href="japanese.html#ramen" class="advisor-btn ghost-advisor-btn">See Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      
+      <article class="advisor-result quick-result">
+        <img src="images/Italian Recipes/SpagBowl.jpg" alt="Spaghetti Bolognese">
+        <div class="advisor-result-content">
+          <span class="advisor-tag">Recommended for you</span>
+          <h3>Spaghetti Bolognese</h3>
+          <p>A familiar, satisfying pasta dish that works well as a quick and filling meal.</p>
+          <div class="advisor-action-row">
+            <a href="italian.html" class="advisor-btn">Browse Italian Dishes</a>
+            <a href="italian.html#bolognese" class="advisor-btn ghost-advisor-btn">See Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- VEGETARIAN -->
+      <article class="advisor-result vegetarian-result">
+        <img src="images/Indian Recipes/PalkPan.JPG" alt="Palak Paneer">
+        <div class="advisor-result-content">
+          <span class="advisor-tag">Recommended for you</span>
+          <h3>Palak Paneer</h3>
+          <p>A flavorful vegetarian Indian dish made with spinach, cheese, and aromatic spices.</p>
+          <div class="advisor-action-row">
+            <a href="indian.html" class="advisor-btn">Browse Indian Dishes</a>
+            <a href="indian.html#palak" class="advisor-btn ghost-advisor-btn">See Recipe</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- STEW -->
+      <article class="advisor-result stew-result">
+        <img src="images/West African Recipes/Maafe.jpg.webp" alt="Mafe Groundnut Soup">
+        <div class="advisor-result-content">
+          <span class="advisor-tag">Recommended for you</span>
+          <h3>Mafé (Groundnut Soup)</h3>
+          <p>A rich peanut-based West African stew with deep, hearty flavor.</p>
+          <div class="advisor-action-row">
+            <a href="west-african.html" class="advisor-btn">Browse West African Dishes</a>
+            <a href="west-african.html#maafe" class="advisor-btn ghost-advisor-btn">See Recipe</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 
   
-<section class="features">
+<section class="features" id="feature">
 
   <div class="features-header">
     <h2>Why Recipe Studio?</h2>
