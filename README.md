@@ -1,22 +1,81 @@
+Recipe Studio is a responsive recipe website built using **HTML and CSS only**.  
+The platform allows users to explore dishes from multiple world cuisines while demonstrating how interactive web features can be created without JavaScript.
+
+The project focuses on clean design, responsive layouts, and creative CSS techniques to simulate dynamic interactions such as animations and recommendations.
+
+---
+
+## Project Overview
+
+Recipe Studio is designed as a **global cooking discovery platform** where users can browse dishes from different cultures.
+
+The website features **five cuisines**:
+
+- West African
+- Japanese
+- Mexican
+- Indian
+- Italian
+
+Each cuisine contains **five featured dishes**, and users can view recipe pages or cooking videos for each dish.
+
+The homepage includes several interactive components built entirely with CSS, including a **carousel slideshow, animated text effects, and a smart recipe advisor**.
+
+---
+
+## Features
+
+**Responsive Design**  
+The website adapts to different screen sizes including desktop, tablet, and mobile devices.
+
+**CSS Carousel**  
+The homepage includes a slideshow carousel created using **CSS keyframe animations and transforms**, allowing slides to move automatically without JavaScript.
+
+**Cuisine Navigation**  
+Users can browse dishes by selecting cuisine cards that link to dedicated cuisine pages.
+
+**Interactive Food Cards**  
+Dish cards include hover animations where the cards slightly jump upward, creating a more engaging browsing experience.
+
+**Smart Recipe Advisor (AI-Inspired)**  
+A recommendation system that suggests dishes based on user preferences such as spicy, comfort food, quick meals, vegetarian dishes, or rich stews.  
+This feature simulates AI behavior using **hidden radio inputs and CSS selectors**.
+
+---
+
+## Recipe Customization
+
+Recipe Studio also includes **dietary customization suggestions** for users with different dietary needs.
+
+Some recipes include guidance on how they can be adapted for:
+
+### Vegan Options
+Examples include:
+
+- **Palak Paneer → Vegan Palak Tofu**
+- **Spaghetti Bolognese → Lentil or mushroom-based sauce**
+- **Eggplant Parmesan → Dairy-free cheese alternative**
+- **Black-Eyed Pea Stew → Naturally vegan**
+
+These suggestions demonstrate how recipes can be adjusted to accommodate different dietary preferences.
+
+---
 
 ## Development Journal & Challenges
 
-Building a fully interactive recipe website using **only HTML and CSS** pushed us to think creatively about how to simulate dynamic behavior without relying on JavaScript.
+Building an interactive recipe website using **only HTML and CSS** required creative solutions for several features.
 
-• **CSS-Only Carousel:**  
-Creating the homepage carousel without JavaScript was one of the most interesting challenges. We implemented it using CSS keyframe animations and transform properties to shift the slides horizontally. Timing the percentages in the animation to allow each slide to pause before moving required experimentation to achieve a smooth slideshow effect.
+• **CSS-Only Carousel**  
+Creating the homepage slideshow without JavaScript required using CSS keyframe animations and transform properties to move slides horizontally. Adjusting the animation timing allowed each slide to pause before transitioning smoothly to the next.which was challenging
 
-• Smart Recipe Advisor (AI-Inspired): 
-One of the most creative features was the **Recipe Advisor**, which simulates an AI recommendation system. Since JavaScript was not allowed, we used hidden radio inputs and labels combined with CSS selectors to dynamically reveal different recommendation cards. This approach allowed the interface to feel interactive while staying within the CSS-only constraint.
+• **Smart Recipe Advisor**  
+The recipe advisor simulates an AI recommendation tool using hidden radio inputs, labels, and CSS conditional selectors. When a user selects a preference, CSS reveals a matching recommendation card.
 
-• **Hover Animations for Dish Cards:**  
-We wanted the cuisine cards to feel engaging, so we added **hover jump animations** using CSS keyframes. Achieving the right amount of motion took some iteration—we had to balance making the animation noticeable without making the interface feel distracting.
 
-• **Responsive Layout Decisions:**  
-During development we experimented with both **Flexbox and CSS Grid**. Flexbox worked well for smaller components like navigation bars and buttons, but CSS Grid proved much more effective for structuring the **recipe card layouts and cuisine sections**, especially when adapting to different screen sizes.
+• **Recipe Customization Feature**  
+Adding vegan and gluten-free adaptations required researching ingredient substitutions that would still preserve the authenticity of the dishes. These suggestions were integrated directly into the recipe content to provide helpful dietary alternatives.
 
-• **Design Consistency Across Pages:**  
-Maintaining a consistent visual theme across the homepage, cuisine pages, and recipe pages required careful organization of the CSS. We structured the styles so shared components—such as cards, buttons, and layouts—could be reused while still allowing each cuisine page to have its own identity.
+• **Project Organization and GitHub Workflow**  
+Using Git and GitHub helped structure the development process. Managing commits, branches, and version control made it easier to track progress and organize changes throughout the project.
 
-• **Project Management with GitHub:**  
-We also gained valuable experience using **Git and GitHub for collaboration**. Managing branches, committing incremental changes, and resolving merge conflicts helped us coordinate development more effectively. Using GitHub turned the project into a collaborative workflow where updates could be reviewed and integrated smoothly.
+---
