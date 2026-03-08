@@ -162,7 +162,7 @@ body{
   left: -9999px;
 }
 .hero-carousel:hover .slides{
-  animation-play-state: paused;
+  /*animation-play-state: paused;*/
 }
 .hero-carousel:focus-within .slides{
   animation: none;
@@ -173,7 +173,7 @@ body{
   width: 500%;
   height: 100%;
   transition: transform .6s ease;
-   animation: autoSlide 20s infinite;
+   animation: autoSlide 12s infinite;
 }
 @keyframes autoSlide{
   0%, 16%   { transform: translateX(0%); }
@@ -191,6 +191,7 @@ body{
   background-position: center;
 }
 
+/* background images */
 .s1{ background-image: url("images/african.jpg"); }
 .s2{ background-image: url("images/indian.jpg"); }
 .s3{ background-image: url("images/japanese.jpg"); }
@@ -272,6 +273,7 @@ body{
   transform: scale(1.15);
   background: #fff;
 }
+/* TYPING TAGLINE */
 
 .tagline{
   background: #0f0f0f;
@@ -374,6 +376,7 @@ body{
   background: rgba(0,0,0,.25);
 }
 
+/* same images as carousel */
 .cuisine-img.west{ background-image: url("images/african.jpg"); }
 .cuisine-img.indian{ background-image: url("images/indian.jpg"); }
 .cuisine-img.japanese{ background-image: url("images/japanese.jpg"); }
@@ -546,4 +549,161 @@ body{
   padding: 24px 16px;
   text-align: center;
   color: rgba(255,255,255,.6);
+}
+/* WHY RECIPE STUDIO (Responsive Commit) */
+
+.features{
+  background: #0f0f0f;
+  padding: clamp(48px, 7vw, 90px) 16px;
+}
+
+.features-header{
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+
+.features-header h2{
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+}
+
+.features-header p{
+  margin: 0;
+  color: rgba(255,255,255,.7);
+}
+
+/* grid */
+.features-grid{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(16px, 3vw, 28px);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* card */
+.feature-card{
+  background: #181818;
+  border-radius: 18px;
+  padding: clamp(20px, 3vw, 28px);
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.feature-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.45);
+}
+
+/* icon */
+.feature-icon{
+  font-size: clamp(28px, 4vw, 36px);
+  margin-bottom: 12px;
+}
+
+/* text */
+.feature-card h3{
+  margin: 0 0 8px;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+.feature-card p{
+  margin: 0;
+  color: rgba(255,255,255,.75);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* mobile polish */
+@media (max-width: 600px){
+  .feature-card:hover{
+    transform: none; /* better for touch */
+  }
+}
+/* WEST AFRICAN */
+
+/* Page background */
+.page-west{
+  background:  
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f5f6f8 35%,
+      #eef1f4 100%
+    );
+  color: #111;
+  min-height: 100vh;
+}
+
+/* Header stays dark for brand consistency */
+.page-west .site-header{
+  background: #0b0b0b;
+}
+
+/* Page hero text becomes dark */
+.page-west .page-hero p{
+  color: rgba(0,0,0,.7);
+}
+
+/* ===== Recipe cards adapt to light theme ===== */
+.page-west .recipe-card{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.page-west .recipe-card:hover{
+  box-shadow: 0 20px 45px rgba(0,0,0,.12);
+}
+
+/* Card text */
+.page-west .recipe-content p{
+  color: rgba(0,0,0,.7);
+}
+
+/* Ghost button adapts */
+.page-west .card-btn.ghost{
+  color: #111;
+  border-color: rgba(0,0,0,.25);
+}
+
+/* Footer light match */
+.page-west .footer{
+  background: #ffffff;
+  color: rgba(0,0,0,.6);
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+/* ========== WEST AFRICAN DARK PREMIUM GRADIENT ========== */
+
+/* ========== WEST AFRICAN — PREMIUM DARK GRADIENT ========== */
+
+body.page-west{
+  /* layered premium background */
+  background:
+    radial-gradient(
+      800px 400px at 12% 5%,
+      rgba(255,255,255,0.06),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 350px at 85% 15%,
+      rgba(255,255,255,0.04),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #1f1f1f 0%,
+      #232323 40%,
+      #2a2a2a 100%
+    );
+
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* disable premium body glow if you added it earlier */
+body.page-west::before{
+  background: none !important;
 }
