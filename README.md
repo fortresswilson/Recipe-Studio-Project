@@ -1,65 +1,22 @@
-# Recipe Studio
 
-Recipe Studio is a responsive recipe website built with **HTML and CSS only**.  
-The project showcases recipes from multiple world cuisines and demonstrates how interactive web experiences can be created without JavaScript.
+## Development Journal & Challenges
 
-## Project Overview
+Building a fully interactive recipe website using **only HTML and CSS** pushed us to think creatively about how to simulate dynamic behavior without relying on JavaScript.
 
-This website was created as a web development assignment focused on designing a clean, responsive, and visually engaging recipe platform using only front-end structure and styling.
+• **CSS-Only Carousel:**  
+Creating the homepage carousel without JavaScript was one of the most interesting challenges. We implemented it using CSS keyframe animations and transform properties to shift the slides horizontally. Timing the percentages in the animation to allow each slide to pause before moving required experimentation to achieve a smooth slideshow effect.
 
-The site features five cuisines:
+• Smart Recipe Advisor (AI-Inspired): 
+One of the most creative features was the **Recipe Advisor**, which simulates an AI recommendation system. Since JavaScript was not allowed, we used hidden radio inputs and labels combined with CSS selectors to dynamically reveal different recommendation cards. This approach allowed the interface to feel interactive while staying within the CSS-only constraint.
 
-- West African
-- Japanese
-- Mexican
-- Indian
-- Italian
+• **Hover Animations for Dish Cards:**  
+We wanted the cuisine cards to feel engaging, so we added **hover jump animations** using CSS keyframes. Achieving the right amount of motion took some iteration—we had to balance making the animation noticeable without making the interface feel distracting.
 
-Each cuisine has its own dedicated page displaying featured dishes, and each dish links to a recipe page or video resource.
+• **Responsive Layout Decisions:**  
+During development we experimented with both **Flexbox and CSS Grid**. Flexbox worked well for smaller components like navigation bars and buttons, but CSS Grid proved much more effective for structuring the **recipe card layouts and cuisine sections**, especially when adapting to different screen sizes.
 
-## Features
+• **Design Consistency Across Pages:**  
+Maintaining a consistent visual theme across the homepage, cuisine pages, and recipe pages required careful organization of the CSS. We structured the styles so shared components—such as cards, buttons, and layouts—could be reused while still allowing each cuisine page to have its own identity.
 
-- Responsive homepage layout
-- CSS-only navigation bar
-- CSS carousel hero section
-- Typing text animation
-- Cuisine browsing cards
-- Dedicated cuisine pages
-- Interactive food cards with hover animation
-- AI-inspired Recipe Advisor built with HTML and CSS only
-- Cutomize recipe feature
-
-## AI-Inspired Feature
-
-One of the main highlights of this project is the Smart Recipe Advisor and Cutomize recipe feature
-
-Because this assignment uses **HTML and CSS only**, the advisor is not powered by real artificial intelligence. Instead, it simulates a recommendation system using:
-
-- hidden radio inputs
-- labels as selection controls
-- CSS conditional selectors
-- dynamic content display
-
-This creates an AI-inspired recommendation experience while staying within the project requirements.
-
-## Technologies Used
-
-- HTML5
-- CSS3
-
-## Project Structure
-
-```bash
-Recipe-Studio/
-│
-├── index.html
-├── west-african.html
-├── japanese.html
-├── mexican.html
-├── indian.html
-├── italian.html
-│
-│
-├── styles.css
-│
-└── images/
+• **Project Management with GitHub:**  
+We also gained valuable experience using **Git and GitHub for collaboration**. Managing branches, committing incremental changes, and resolving merge conflicts helped us coordinate development more effectively. Using GitHub turned the project into a collaborative workflow where updates could be reviewed and integrated smoothly.
