@@ -241,9 +241,10 @@ body{
 .hero-carousel:not(:hover):not(:focus-within) #slide2:checked ~ .slides,
 .hero-carousel:not(:hover):not(:focus-within) #slide3:checked ~ .slides,
 .hero-carousel:not(:hover):not(:focus-within) #slide4:checked ~ .slides,
-.hero-carousel:not(:hover):not(:focus-within) #slide5:checked ~ .slides{
-  transform: none; 
-}
+.hero-carousel:not(:hover):not(:focus-within) #slide5:checked ~ .slides
+{
+  transform: none; *
+{}}
 
 #slide1:checked ~ .slides{ transform: translateX(0%); }
 #slide2:checked ~ .slides{ transform: translateX(-20%); }
@@ -838,8 +839,9 @@ body{
     gap: 10px;
   }
 
-  .advisor-options label{
-    font-size: 0.92rem;
-    padding: 10px 14px;
+    .advisor-options label{
+      font-size: 0.92rem;
+      padding: 10px 14px;
+    }
   }
 }
